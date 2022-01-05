@@ -112,7 +112,7 @@
             function deleteStar(title) {
                 $.ajax({
                     type: 'POST',
-                    url: '/memo',
+                    url: '/memo_delete',
                     data: {title_give: title},
                     success: function (response) {
                         alert(response['msg']);
