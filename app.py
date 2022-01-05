@@ -46,7 +46,7 @@ def saving():
 
     return jsonify({'msg':'저장이 완료되었습니다!'})
 
-@app.route('/memo', methods=['POST'])
+@app.route('/memo_delete', methods=['POST'])
 def delete_star():
     title_receive = request.form['title_give']
 
